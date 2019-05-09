@@ -11,6 +11,14 @@
         <circle cx="0" cy="0" r="48" fill="darkblue"/>
         <circle cx="0" cy="0" r="40" fill="lightgray"/>
         </g>
+        <g id="spider">
+        <circle cx="0" cy="0" r="55" fill="darkred"/>
+        <circle cx="0" cy="0" r="25" fill="lightgray"/>
+        </g>
+        <g id="fly">
+        <circle cx="0" cy="0" r="55" fill="darkgreen"/>
+        <circle cx="0" cy="0" r="35" fill="lightgray"/>
+        </g>
       </defs>
       <g id="lines" fill="transparent" stroke="darkblue" stroke-width="8">
         <path d="M 500 100 L 200 300 H 800 Z" />
@@ -19,14 +27,24 @@
         <path d="M 200 700 L 500 900 L 800 700" />
         <path d="M 200 300 V 700 H 800 V 300" />
       </g>
-      <use href="#spot" x="500" y="100" id="uppermiddlespot" />
-      <use href="#spot" x="200" y="300" id="upperleftspot" />
-      <use href="#spot" x="800" y="300" id="upperrightspot" />
-      <use href="#spot" x="500" y="500" id="centerspot" />
-      <use href="#spot" x="200" y="700" id="lowerleftspot" />
-      <use href="#spot" x="500" y="700" id="lowermiddlespot" />
-      <use href="#spot" x="800" y="700" id="lowerrightspot" />
-      <use href="#spot" x="500" y="900" id="lowestmiddlespot" />
+      <g id="drawspots">
+        <use href="#spot" x="500" y="100" id="uppermiddlespot" />
+        <use href="#spot" x="200" y="300" id="upperleftspot" />
+        <use href="#spot" x="800" y="300" id="upperrightspot" />
+        <use href="#spot" x="500" y="500" id="centerspot" />
+        <use href="#spot" x="200" y="700" id="lowerleftspot" />
+        <use href="#spot" x="500" y="700" id="lowermiddlespot" />
+        <use href="#spot" x="800" y="700" id="lowerrightspot" />
+        <use href="#spot" x="500" y="900" id="lowestmiddlespot" />
+      </g>
+      <g id="drawspider">
+        <use href="#spider" x="500" y="100" id="uppermiddlespot" />
+      </g>
+      <g id="drawflies">
+        <use href="#fly" x="200" y="700" />
+        <use href="#fly" x="800" y="700" />
+        <use href="#fly" x="500" y="900" />
+      </g>
     </svg>
     </div>
   </body>
