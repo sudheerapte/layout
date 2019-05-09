@@ -1,0 +1,33 @@
+<html>
+  <head><title>figures</title></head>
+  <style>
+    div { width: 640px; background: lightyellow; }
+  </style>
+  <body>
+    <div>
+    <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <g id="spot">
+        <circle cx="0" cy="0" r="48" fill="darkblue"/>
+        <circle cx="0" cy="0" r="40" fill="lightgray"/>
+        </g>
+      </defs>
+      <g id="lines" fill="transparent" stroke="darkblue" stroke-width="8">
+        <path d="M 500 100 L 200 300 H 800 Z" />
+        <path d="M 500 100 L 500 500 L 500 900" />
+        <path d="M 200 300 L 800 700 M 800 300 L 200 700" />
+        <path d="M 200 700 L 500 900 L 800 700" />
+        <path d="M 200 300 V 700 H 800 V 300" />
+      </g>
+      <use href="#spot" x="500" y="100" id="uppermiddlespot" />
+      <use href="#spot" x="200" y="300" id="upperleftspot" />
+      <use href="#spot" x="800" y="300" id="upperrightspot" />
+      <use href="#spot" x="500" y="500" id="centerspot" />
+      <use href="#spot" x="200" y="700" id="lowerleftspot" />
+      <use href="#spot" x="500" y="700" id="lowermiddlespot" />
+      <use href="#spot" x="800" y="700" id="lowerrightspot" />
+      <use href="#spot" x="500" y="900" id="lowestmiddlespot" />
+    </svg>
+    </div>
+  </body>
+</html>
